@@ -1,0 +1,67 @@
+.footer {
+    background-color: black;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.contenedor-btn {
+    background-color: black;
+    padding: 20px;
+}
+
+.contenedor-btn a {
+    margin-top: 160px;
+    margin-bottom: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    line-height: 1.2;
+    display: block;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-bottom: 7rem;
+}
+
+.redes h6 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.redes-juntas p {
+    color: #fff;
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-footer {
+    position: absolute;
+    right: 100px;
+    text-align: right;
+}
+
+.logo-footer img {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.logo-footer p {
+    color: #929292;
+}
