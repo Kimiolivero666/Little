@@ -18,7 +18,7 @@ const Inicio = () => {
                             <h2 className='titulo1'>WE ARE A</h2>
                             <h2>DESIGN-LED</h2>
                             <h2>BRAND AGENCY.</h2>
-                            <h2 className='ultimo-titulo'>WE ARE LITTLE.</h2>
+                            <h3 className='ultimo-titulo'>WE ARE LITTLE.</h3>
                         </Col>
                     </Row>
                 </Container>

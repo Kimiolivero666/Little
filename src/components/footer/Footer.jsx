@@ -13,8 +13,9 @@ const Footer = () => {
                             </div>
                         </Col>
                     </Row>
+                    
                     <Row>
-                        <Col md={6} >
+                        <Col lg={6} >
 
                             <div className="contacto">
                                 <div className="redes">

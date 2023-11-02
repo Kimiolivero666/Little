@@ -65,3 +65,59 @@
 .logo-footer p {
     color: #929292;
 }
+
+
+/* responsive */
+
+@media screen and (max-width: 1200px){
+
+
+    .redes a{
+        font-size: 18px;
+    }
+    .redes-juntas p{
+        font-size: 18px;
+    } 
+
+    .logo-footer{
+        bottom: 20px;
+        text-align: left;
+        left: 30px;
+    }
+    .logo-footer img{
+        width: 60px;
+        margin-bottom: 15px;
+    }
+    .logo-footer p{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 660px){
+    .contenedor-btn a{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .redes a{
+        font-size: 18px;
+    }
+
+    .redes-juntas p{
+        font-size: 18px;
+    } 
+   
+    .logo-footer{
+        top: 220px;
+        text-align: left;
+        left: 30px;
+    }
+    .logo-footer img{
+        width: 60px;
+        margin-bottom: 15px;
+    }
+    .logo-footer p{
+        font-size: 13px;
+    }
+}
