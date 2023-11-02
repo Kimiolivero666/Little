@@ -1,0 +1,69 @@
+.works{
+    background: black;
+    margin-top: 90px;
+    }
+
+.titulo{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.contenedor-ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 150px;
+    font-weight: 500;
+    line-height: 0.8;
+    color: #fff;
+}
+
+.titulo2{
+    color: #fff;
+    font-size: 22PX;
+    margin-top: 100PX;
+    font-weight: 100;
+}
+
+.btn-works{
+    font-size: 50px;
+    border: none;
+    background: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+.link {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+  }
+  
+  .link:nth-child(1):hover {
+    color: #ff5733; /* Color para el primer enlace al pasar el mouse */
+  }
+  
+  .link:nth-child(2):hover {
+    color: #33ff57; /* Color para el segundo enlace al pasar el mouse */
+  }
+  
+  .link:nth-child(3):hover {
+    color: #5733ff; /* Color para el tercer enlace al pasar el mouse */
+  }
+  
+  .link:nth-child(4):hover {
+    color: #ff33e6; /* Color para el cuarto enlace al pasar el mouse */
+  }
+  
+  .link:nth-child(5):hover {
+    color: #33e6ff; /* Color para el quinto enlace al pasar el mouse */
+  }
+  

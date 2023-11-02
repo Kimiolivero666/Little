@@ -1,15 +1,13 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import NavBar from '../../components/navbar/NavBar'
+
 import Video from '../../components/video/Video'
 import './inicio.css'
-import Footer from '../../components/footer/Footer'
 
 
 const Inicio = () => {
     return (
         <>
         <div className="inicio">
-            <NavBar />
 
             <div className="banner-principal">
                 <Container>
@@ -31,7 +29,6 @@ const Inicio = () => {
 
                 </Col>
             </Row>
-                <Footer />
                 </div>
         </>
     )

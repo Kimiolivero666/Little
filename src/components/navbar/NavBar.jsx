@@ -5,6 +5,8 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { RiCloseFill } from 'react-icons/ri';
 
 import './navbar.css';
+import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,13 +17,16 @@ const NavBar = () => {
 
   return (
     <>
+    
     <div className={`full-page-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}  >
       <div className="menu-content">
         <ul>
-          <li>WORK</li>
-          <li>CAPABILITIES</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+        <Nav.Link as={Link} to={"/work"} className='li'  href="#link">WORKS</Nav.Link>
+        <Nav.Link as={Link} to={"/work"} className='li' href="#link">CAPABILITIES</Nav.Link>
+        <Nav.Link as={Link} to={"/work"} className='li' href="#link">ABOUT</Nav.Link>
+        <Nav.Link as={Link} to={"/work"} className='li' href="#link">CONTACT</Nav.Link>
+        
+      
         </ul>
       </div>
     </div>
@@ -29,7 +34,7 @@ const NavBar = () => {
     <Navbar expand="lg" className="navbar fixed-top">
       <Container>
         <div className="logo my-3">
-          <img src="https://littleco2.wpengine.com/wp-content/uploads/2020/04/LogoWhite.svg" alt="" />
+        <Link to='/'>  <img src="https://littleco2.wpengine.com/wp-content/uploads/2020/04/LogoWhite.svg" alt="" /></Link>
         </div>
         
         <div className={`toggler-icon ${menuOpen ? 'd-none' : ''}`} onClick={toggleMenu}>
@@ -41,6 +46,7 @@ const NavBar = () => {
         </div>
       </Container>
     </Navbar>
+    
     </>
   );
 };

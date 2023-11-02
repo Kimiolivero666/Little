@@ -1,5 +1,6 @@
+
 .navbar {
-    background: #090909;
+    background: black;
 
 }
 
@@ -71,12 +72,6 @@
     padding: 0;
 }
 
-/* .menu-content ul li { */
-    /* margin: 20px 0; */
-    /* font-size: 50px; */
-    /* color: black; */
-    /* cursor: pointer; */
-/* } */
 
 /* Otros estilos */
 .toggler-icon,
@@ -90,7 +85,7 @@
 
 
 
-.menu-content ul li {
+.menu-content ul .li {
     margin: 20px 0;
     font-size: 50px;
     color: black;
@@ -100,7 +95,7 @@
     transition: color 0.3s ease; /* Transición de color */
 }
 
-.menu-content ul li::before {
+.menu-content ul .li::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -109,10 +104,10 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0); /* Color de fondo inicial */
     z-index: -1;
-    transition: background-color 0.3s ease; /* Transición de color de fondo */
+    transition: background-color 0.8s ease; /* Transición de color de fondo */
 }
 
-.menu-content ul li:hover::before {
+.menu-content ul .li:hover::before {
     background-color: #f1f239; /* Color de fondo al pasar el mouse */
     border-radius: 50%; /* Transición a un círculo */
 }
