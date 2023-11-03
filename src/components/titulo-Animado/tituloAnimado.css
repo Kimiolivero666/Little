@@ -1,0 +1,69 @@
+.section {
+    margin-top: 110px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.block-titulo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    color: #fff;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: black;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 4em;
+    opacity: 0; /* Comienza con opacidad cero para animar la aparición */
+    animation: aparecerDesdeIzquierda 1s ease forwards; /* Nombre de la animación y duración */
+}
+
+@keyframes aparecerDesdeIzquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.titulo-ppal{
+    font-size: 10rem;
+    color: black;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase ;
+    display: inline-block;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1440px){
+    .titulo-ppal{ 
+        font-size: 8rem; 
+ } 
+}
+
+ @media screen and (max-width: 810px){ 
+    .titulo{ 
+         font-size: 2rem; 
+     } 
+    .titulo-ppal{ 
+        font-size: 80px; 
+ } 
+} 
+
+ @media screen and (max-width: 482px){ 
+    .titulo-ppal{ 
+     font-size: 60px; 
+     } 
+} 

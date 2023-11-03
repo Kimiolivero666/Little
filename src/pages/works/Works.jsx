@@ -11,7 +11,7 @@ const Works = () => {
 
       <div className="contenedor-ul my-5">
         
-          <Link className='link'>LAGUNITAS</Link>
+          <Link to='lagunitas' className='link'>LAGUNITAS</Link>
           <Link className='link'>KING ARTHUR</Link>
           <Link className='link'>VERMONT CREAMERY</Link>
           <Link className='link'>HELLO PIZZA</Link>
