@@ -13,9 +13,58 @@
     margin-bottom: 50px;
 }
 
-.video-lagunitas iframe{
+.section-1 img{
     width: 100%;
+    margin-top: 100px;
 }
+
+.section-2 img{
+    margin-top: 200px;
+    width: 70%;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-next-all{
+    margin-bottom: 150px;
+}
+
+.up-next h6{
+    font-size: 17px;
+    letter-spacing: 0.3em;
+    margin-top: 150px;
+    font-weight: 400;
+}
+
+.btn-all{
+    text-align: right;
+}
+
+/* responsive */
+
+@media screen and (max-width: 767px){
+    .section-2 img{
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .btn-all{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .btn-all{
+        margin-top: 20px;
+    }
+}
+
+
+
+
 
 
 

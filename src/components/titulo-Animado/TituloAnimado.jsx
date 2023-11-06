@@ -7,15 +7,15 @@ const TituloAnimado = (props) => {
         <>
 
             <section className="section">
-                <Row>
-                    <Col md={3}>
+            
+                    
                         <div className="block-titulo">
                             <h2 className="titulo">{props.titulo}</h2>
                         </div>
-                    </Col>
-                </Row>
+                    
+                
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={10}>
                         <div className="block-titulo-ppal">
                             <h2 className="titulo-ppal">{props.tituloPpal}</h2>
                     </div>

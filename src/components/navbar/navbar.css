@@ -43,7 +43,7 @@
     border-radius: 50%;
     /* Inicia como un círculo */
     z-index: 999;
-    transition: width 1s ease, height 1s ease, border-radius 1s ease;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
     /* Transición suave */
     overflow: hidden;
     /* Evita el desbordamiento */

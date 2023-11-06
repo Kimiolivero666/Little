@@ -4,6 +4,14 @@ import './works.css'
 import { Container } from 'react-bootstrap'
 
 const Works = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  };
+
   return (
     <div className="works">
       <Container>
@@ -11,9 +19,9 @@ const Works = () => {
 
       <div className="contenedor-ul my-5">
         
-          <Link to='lagunitas' className='link'>LAGUNITAS</Link>
-          <Link className='link'>KING ARTHUR</Link>
-          <Link className='link'>VERMONT CREAMERY</Link>
+          <Link to='lagunitas' onClick={scrollToTop} className='link'>LAGUNITAS</Link>
+          <Link to='King-Arthur' onClick={scrollToTop} className='link'>KING ARTHUR</Link>
+          <Link to='Vermont-Creamery' onClick={scrollToTop}className='link'>VERMONT CREAMERY</Link>
           <Link className='link'>HELLO PIZZA</Link>
           <Link className='link'>BREMER BANK</Link>
         

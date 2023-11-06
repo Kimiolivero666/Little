@@ -1,0 +1,15 @@
+
+
+.button-all {
+    display: inline-block;
+  }
+  
+.button-all h3{
+    font-size: 55px;
+    font-weight: 100;
+    color: black;
+    border-bottom: 3px solid black;
+    line-height: 1.45em;
+    letter-spacing: 0.0665em;
+    display: inline;
+}

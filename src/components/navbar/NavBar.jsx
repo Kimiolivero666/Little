@@ -15,14 +15,21 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' 
+    });
+  };
+
   return (
     <>
     
     <div className={`full-page-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}  >
       <div className="menu-content">
         <ul>
-        <Nav.Link as={Link} to={"/work"} className='li'  href="#link">WORKS</Nav.Link>
-        <Nav.Link as={Link} to={"/work"} className='li' href="#link">CAPABILITIES</Nav.Link>
+        <Nav.Link as={Link} to="/work" onClick={scrollToTop} className='li'  href="#link">WORKS</Nav.Link>
+        <Nav.Link as={Link} to="/work" className='li' href="#link">CAPABILITIES</Nav.Link>
         <Nav.Link as={Link} to={"/work"} className='li' href="#link">ABOUT</Nav.Link>
         <Nav.Link as={Link} to={"/work"} className='li' href="#link">CONTACT</Nav.Link>
         
