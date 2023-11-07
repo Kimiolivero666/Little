@@ -22,8 +22,11 @@ const Works = () => {
           <Link to='lagunitas' onClick={scrollToTop} className='link'>LAGUNITAS</Link>
           <Link to='King-Arthur' onClick={scrollToTop} className='link'>KING ARTHUR</Link>
           <Link to='Vermont-Creamery' onClick={scrollToTop}className='link'>VERMONT CREAMERY</Link>
-          <Link className='link'>HELLO PIZZA</Link>
-          <Link className='link'>BREMER BANK</Link>
+          <Link to='Hello-Pizza'  onClick={scrollToTop} className='link'>HELLO PIZZA</Link>
+          <Link to='Bremer-Bank'  onClick={scrollToTop} className='link'>BREMER BANK</Link>
+          <Link to='Fair-State'  onClick={scrollToTop} className='link'>FAIR STATE</Link>
+          <Link to='Lsi'  onClick={scrollToTop} className='link'>LSI</Link>
+          <Link to='Securian'  onClick={scrollToTop} className='link'>SECURIAN</Link>
         
       </div>
       <h2 className='titulo2'>HOW WE WORK OUR MAGIC</h2>

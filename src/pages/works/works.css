@@ -66,6 +66,20 @@
   .link:nth-child(5):hover {
     color: #33e6ff; /* Color para el quinto enlace al pasar el mouse */
   }
+
+  .link:nth-child(6):hover {
+    color: #a68b6e; /* Color para el quinto enlace al pasar el mouse */
+  }
+
+  .link:nth-child(7):hover {
+    color: #f1f239; /* Color para el quinto enlace al pasar el mouse */
+  }
+
+  .link:nth-child(8):hover {
+    color: #cd0017; /* Color para el quinto enlace al pasar el mouse */
+  }
+    
+    
   
 
   /* responsive */

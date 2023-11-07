@@ -187,7 +187,8 @@ const KingArthur = () => {
                     <Row className="justify-content-end">
                         <Col sm={6}>
                             <div className="btn-next">
-                                <Link to={'/work/Vermont-Creamery'}><ButtonNext titulo="VERMONT CREAMERY" /></Link>
+                                <Link to='/work/Vermont-Creamery' onClick={scrollToTop}><ButtonNext titulo="VERMONT CREAMERY" />
+                                </Link>
                             </div>
                         </Col>
                         <Col sm={6}>

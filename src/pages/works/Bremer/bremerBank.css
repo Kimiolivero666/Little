@@ -1,0 +1,27 @@
+.BremerBank {
+    margin-top: 90px;
+}
+
+.block-titulo-section {
+    margin-top: 200px;
+    padding-bottom: 10px;
+}
+
+.titulo-section {
+    color: #fff;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: black;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    opacity: 0;
+    /* Comienza con opacidad cero para animar la aparición */
+    animation: aparecerDesdeIzquierda 1s ease forwards;
+    /* Nombre de la animación y duración */
+    font-size: 50px;
+    line-height: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
