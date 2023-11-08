@@ -12,6 +12,11 @@ import BremerBank from './pages/works/Bremer/BremerBank'
 import FairState from './pages/works/fair-state/FairState'
 import Lsi from './pages/works/lsi/Lsi'
 import Securian from './pages/works/securian/Securian'
+import Capabilities from './pages/capabilities/Capabilities'
+import Strategy from './pages/capabilities/strategy/Strategy'
+import Brand from './pages/capabilities/brand/Brand'
+import Digital from './pages/capabilities/digital/Digital'
+import Experimential from './pages/capabilities/experimential/Experimential'
 
 
 
@@ -31,6 +36,11 @@ const App = () => {
             <Route path="/work/Fair-State" element={<FairState />} />
             <Route path="/work/Lsi" element={<Lsi />} />
             <Route path="/work/Securian" element={<Securian />} />
+            <Route path="/capabilities" element={<Capabilities />} />
+            <Route path="/capabilities/strategy" element={<Strategy/>} />
+            <Route path="/capabilities/brand" element={<Brand/>} />
+            <Route path="/capabilities/digital" element={<Digital/>} />
+            <Route path="/capabilities/experimential" element={<Experimential/>} />
           </Routes>
         </Layout>
       </BrowserRouter>

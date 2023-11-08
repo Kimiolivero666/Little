@@ -38,7 +38,17 @@ const HelloPizza = () => {
                         <p>We used a bold color palette and a collection of quirky illustrations to highlight the brand’s creativity and commitment to the craft of pizza, then extended it onto every touchpoint, including to-go boxes, merchandise, gift cards and more.</p>
                     </Col>
                     <Col md={4}>
-                        <Listado />
+                        <Listado 
+                         titulo="WHAT WE DID"
+                         subtitulo1=""
+                         subtitulo2="BRAND"
+                         subtitulo3="EXPERIENCE"
+                         subtitulo4="PACKAGING"
+                         subtitulo5=""
+                         subtitulo6=""
+                         subtitulo7=""
+                         subtitulo8=""
+                         />
                     </Col>
                 </Row>
 
@@ -98,7 +108,7 @@ const HelloPizza = () => {
                         <Col sm={6}>
                             <div className="btn-all">
                                 <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll />
+                                    <ButtonAll name='ALL PROJECTS'/>
                                 </Link>
                             </div>
                         </Col>

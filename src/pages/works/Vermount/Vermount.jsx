@@ -36,7 +36,17 @@ const Vermount = () => {
 
           </Col>
           <Col md={4}>
-            <Listado />
+            <Listado
+            titulo="WHAT WE DID"
+            subtitulo1="STRATEGY"
+            subtitulo2="BRAND"
+            subtitulo3="EXPERIENCE"
+            subtitulo4="PACKAGING"
+            subtitulo5=""
+            subtitulo6=""
+            subtitulo7=""
+            subtitulo8=""
+            />
           </Col>
         </Row>
 
@@ -94,7 +104,7 @@ const Vermount = () => {
         <Col sm={6}>
             <div className="btn-all">
                 <Link to='/work'onClick={scrollToTop}>
-                    <ButtonAll />
+                    <ButtonAll name='ALL PROJECTS'/>
                 </Link>
             </div>
         </Col>

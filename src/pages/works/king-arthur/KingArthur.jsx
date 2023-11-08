@@ -51,7 +51,18 @@ const KingArthur = () => {
                         <p>COVID-19 and the subsequent shutdown shifted our big brand launch moment from the streets of NYC to the home kitchens of influencers and bakers everywhere. The launch tactics and corresponding brand creative generated a groundswell of positive response from King Arthur’s champions and fans, including 250+ posts from Instagram influencers, 500 million earned media impressions and up to 9x more engagement than typical on launch-related social posts. For more details on the brand launch, check out Forbes, Adweek, Brand New and our AIGA case study. The results wouldn’t have been possible without our incredible partnerships at King Arthur and their PR team at Alison & Partners.</p>
                     </Col>
                     <Col md={4}>
-                        <Listado />
+                        <Listado
+                        
+                         titulo="SERVICES"
+                         subtitulo1="STRATEGY"
+                         subtitulo2="CAMPAIGN"
+                         subtitulo3="CONTENT"
+                         subtitulo4="DIGITAL"
+                         subtitulo5="PRODUCTION"
+                         subtitulo6="BRAND"
+                         subtitulo7="PACKAGING "
+                         subtitulo8=""
+                     />
                     </Col>
                     <div className="et_pb_text_inner my-5">
                         <p>The launch generated
@@ -194,7 +205,7 @@ const KingArthur = () => {
                         <Col sm={6}>
                             <div className="btn-all">
                                 <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll />
+                                    <ButtonAll name='ALL PROJECTS'/>
                                 </Link>
                             </div>
                         </Col>

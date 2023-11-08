@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import './ButtonAll.css'
 
-const ButtonAll = () => {
+const ButtonAll = (props) => {
   return (
     <div className='button-all'>
-        <h3>ALL PROJECTS</h3>
+        <h3>{props.name}</h3>
     </div>
   )
 }

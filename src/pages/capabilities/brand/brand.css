@@ -1,0 +1,45 @@
+.Brand{
+    margin-top: 90px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    transform: translate(-100%, -50%); 
+    transition: transform 0.4s ease; 
+    padding: 10px;
+    display: none;
+}
+
+
+.image-container:hover .image-title {
+    display: block;
+    transform: translate(0, -50%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

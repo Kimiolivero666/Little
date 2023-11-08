@@ -17,21 +17,21 @@ import { Link } from 'react-router-dom'
 
 
 
-    const scrollToTop = () => {
-      window.scrollTo({
+const scrollToTop = () => {
+    window.scrollTo({
         top: 0,
-        behavior: 'smooth' 
-      });
-    };
+        behavior: 'smooth'
+    });
+};
 
-  
+
 
 
 const Lagunitas = () => {
     return (
         <div className='lagunitas'>
             <Container>
-                <TituloAnimado titulo="LAGUNITA" tituloPpal='GETTING ROWDY FOR TEA TIME'/>
+                <TituloAnimado titulo="LAGUNITA" tituloPpal='GETTING ROWDY FOR TEA TIME' />
 
                 <Row>
                     <Col md={8} className='box-parrafos'>
@@ -39,7 +39,17 @@ const Lagunitas = () => {
                         <p>Our integrated multichannel campaign platform helped Lagunitas break into the extremely saturated (and sugar-laden) Beyond Beer category with bold creative spiked with lovable irreverence. We established a flexible design system that featured bold illustrations, imagery and colors, paired with a decidedly disorderly voice. As a cousin of the Lagunitas master brand, Disorderly TeaHouse brought an exciting attitude that continued to prod consumers’ attention through digital, social, out-of-home, connected TV and streaming audio over the course ten thirst-quenching months.</p>
                     </Col>
                     <Col md={4}>
-                        <Listado />
+                        <Listado
+                            titulo="SERVICES"
+                            subtitulo1="STRATEGY"
+                            subtitulo2="CAMPAIGN"
+                            subtitulo3="CONTENT"
+                            subtitulo4="DIGITAL"
+                            subtitulo5="PRODUCTION"
+                            subtitulo6=""
+                            subtitulo7=""
+                            subtitulo8=""
+                        />
                     </Col>
                 </Row>
 
@@ -118,8 +128,8 @@ const Lagunitas = () => {
                         </Col>
                         <Col sm={6}>
                             <div className="btn-all">
-                                <Link to='/work'onClick={scrollToTop}>
-                                    <ButtonAll />
+                                <Link to='/work' onClick={scrollToTop}>
+                                    <ButtonAll name='ALL PROJECTS'/>
                                 </Link>
                             </div>
                         </Col>

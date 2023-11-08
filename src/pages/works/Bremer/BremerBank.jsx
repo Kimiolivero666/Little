@@ -47,7 +47,17 @@ const BremerBank = () => {
                     </Col>
 
                     <Col md={4}>
-                        <Listado />
+                        <Listado 
+                         titulo="WHAT WE DID"
+                         subtitulo1="STRATEGY"
+                         subtitulo2="BRAND"
+                         subtitulo3="EXPERIENCE"
+                         subtitulo4="CAMPAIGN"
+                         subtitulo5="CONTENT"
+                         subtitulo6="DIGITAL"
+                         subtitulo7=""
+                         subtitulo8=""
+                         />
                     </Col>
                 </Row>
 
@@ -138,7 +148,7 @@ const BremerBank = () => {
                         <Col sm={6}>
                             <div className="btn-all">
                                 <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll />
+                                    <ButtonAll name='ALL PROJECTS' />
                                 </Link>
                             </div>
                         </Col>

@@ -47,7 +47,17 @@ const Lsi = () => {
                         <p>We’ve helped Landscape Structures establish and maintain a strong brand position among employees and customers alike. Our extensive project list spans the annual product catalog and solutions brochures, a fully customized iPad app, sales booth concepts and high-impact brand videos. </p>
                     </Col>
                     <Col md={4}>
-                        <Listado />
+                        <Listado 
+                        titulo="WHAT WE DID"
+                        subtitulo1="EXPERIENTIAL"
+                        subtitulo2="BRAND"
+                        subtitulo3=""
+                        subtitulo4=""
+                        subtitulo5="CONTENT"
+                        subtitulo6="DIGITAL"
+                        subtitulo7="PRODUCTION"
+                        subtitulo8=""
+                        />
                     </Col>
                 </Row>
 
@@ -119,7 +129,7 @@ const Lsi = () => {
                         <Col sm={6}>
                             <div className="btn-all">
                                 <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll />
+                                    <ButtonAll name='ALL PROJECTS'/>
                                 </Link>
                             </div>
                         </Col>

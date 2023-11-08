@@ -37,7 +37,17 @@ const Securian = () => {
                     </Col>
 
                     <Col md={4}>
-                        <Listado />
+                        <Listado 
+                         titulo="WHAT WE DID"
+                         subtitulo1="STRATEGY"
+                         subtitulo2="BRAND"
+                         subtitulo3="CAMPAIGN"
+                         subtitulo4="DIGITAL"
+                         subtitulo5="EXPERIENCE"
+                         subtitulo6="CONTENT"
+                         subtitulo7=""
+                         subtitulo8=""
+                         />
                     </Col>
                 </Row>
 
@@ -89,7 +99,7 @@ const Securian = () => {
                         <Col sm={6}>
                             <div className="btn-all">
                                 <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll />
+                                    <ButtonAll name='ALL PROJECTS'/>
                                 </Link>
                             </div>
                         </Col>
