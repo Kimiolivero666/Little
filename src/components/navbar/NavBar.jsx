@@ -31,7 +31,7 @@ const NavBar = () => {
         <Nav.Link as={Link} to="/work" onClick={scrollToTop} className='li'  href="#link">WORKS</Nav.Link>
         <Nav.Link as={Link} to="/capabilities" onClick={scrollToTop} className='li' href="#link">CAPABILITIES</Nav.Link>
         <Nav.Link as={Link} to="/about" onClick={scrollToTop} className='li' href="#link">ABOUT</Nav.Link>
-        <Nav.Link as={Link} to={"/work"} className='li' href="#link">CONTACT</Nav.Link>
+        <Nav.Link as={Link} to="/contact" onClick={scrollToTop} className='li' href="#link">CONTACT</Nav.Link>
         
       
         </ul>

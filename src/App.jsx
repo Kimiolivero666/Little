@@ -22,6 +22,7 @@ import Packaging from './pages/capabilities/packaging/Packaging'
 import Contet from './pages/capabilities/content/Contet'
 import Production from './pages/capabilities/production/Production'
 import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
 
 
 
@@ -54,6 +55,7 @@ const App = () => {
             <Route path="/capabilities/content" element={<Contet />} />
             <Route path="/capabilities/production" element={<Production/>} />
             <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
         </Layout>
       </BrowserRouter>
