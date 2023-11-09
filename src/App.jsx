@@ -17,6 +17,13 @@ import Strategy from './pages/capabilities/strategy/Strategy'
 import Brand from './pages/capabilities/brand/Brand'
 import Digital from './pages/capabilities/digital/Digital'
 import Experimential from './pages/capabilities/experimential/Experimential'
+import Campaign from './pages/capabilities/campaign/Campaign'
+import Packaging from './pages/capabilities/packaging/Packaging'
+import Contet from './pages/capabilities/content/Contet'
+import Production from './pages/capabilities/production/Production'
+
+
+
 
 
 
@@ -37,10 +44,14 @@ const App = () => {
             <Route path="/work/Lsi" element={<Lsi />} />
             <Route path="/work/Securian" element={<Securian />} />
             <Route path="/capabilities" element={<Capabilities />} />
-            <Route path="/capabilities/strategy" element={<Strategy/>} />
-            <Route path="/capabilities/brand" element={<Brand/>} />
-            <Route path="/capabilities/digital" element={<Digital/>} />
-            <Route path="/capabilities/experimential" element={<Experimential/>} />
+            <Route path="/capabilities/strategy" element={<Strategy />} />
+            <Route path="/capabilities/brand" element={<Brand />} />
+            <Route path="/capabilities/digital" element={<Digital />} />
+            <Route path="/capabilities/experimential" element={<Experimential />} />
+            <Route path="/capabilities/campaign" element={<Campaign />} />
+            <Route path="/capabilities/packaging" element={<Packaging />} />
+            <Route path="/capabilities/content" element={<Contet />} />
+            <Route path="/capabilities/production" element={<Production/>} />
           </Routes>
         </Layout>
       </BrowserRouter>

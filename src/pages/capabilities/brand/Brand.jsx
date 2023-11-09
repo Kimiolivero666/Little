@@ -185,7 +185,7 @@ const Brand = () => {
                     <Row className="justify-content-end">
                         <Col sm={6}>
                             <div className="btn-next">
-                                <Link to='/capabilitieS/digital' onClick={scrollToTop}><ButtonNext titulo="DIGITAL" />
+                                <Link to='/capabilities/digital' onClick={scrollToTop}><ButtonNext titulo="DIGITAL" />
                                 </Link>
                             </div>
                         </Col>

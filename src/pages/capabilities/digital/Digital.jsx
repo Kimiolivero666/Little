@@ -84,7 +84,7 @@ const Digital = () => {
                     <Row className="justify-content-end">
                         <Col sm={6}>
                             <div className="btn-next">
-                                <Link to='/capabilitieS/experiential' onClick={scrollToTop}><ButtonNext titulo="EXPERIENTIAL" />
+                                <Link to='/capabilitieS/experimential' onClick={scrollToTop}><ButtonNext titulo="EXPERIENTIAL" />
                                 </Link>
                             </div>
                         </Col>
