@@ -14,7 +14,6 @@ import Catalog_PlayingCards from '../../../assets/lsi/LSI_Catalog_PlayingCards.g
 import PlayingCards2 from '../../../assets/lsi/LSI_PlayingCards_2.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
 
 
 
@@ -47,16 +46,16 @@ const Lsi = () => {
                         <p>We’ve helped Landscape Structures establish and maintain a strong brand position among employees and customers alike. Our extensive project list spans the annual product catalog and solutions brochures, a fully customized iPad app, sales booth concepts and high-impact brand videos. </p>
                     </Col>
                     <Col md={4}>
-                        <Listado 
-                        titulo="WHAT WE DID"
-                        subtitulo1="EXPERIENTIAL"
-                        subtitulo2="BRAND"
-                        subtitulo3=""
-                        subtitulo4=""
-                        subtitulo5="CONTENT"
-                        subtitulo6="DIGITAL"
-                        subtitulo7="PRODUCTION"
-                        subtitulo8=""
+                        <Listado
+                            titulo="WHAT WE DID"
+                            subtitulo1="EXPERIENTIAL"
+                            subtitulo2="BRAND"
+                            subtitulo3=""
+                            subtitulo4=""
+                            subtitulo5="CONTENT"
+                            subtitulo6="DIGITAL"
+                            subtitulo7="PRODUCTION"
+                            subtitulo8=""
                         />
                     </Col>
                 </Row>
@@ -114,27 +113,27 @@ const Lsi = () => {
                     </Col>
                 </Row>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/Securian' onClick={scrollToTop}><ButtonNext titulo="SECURIAN" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/Fair-State' onClick={scrollToTop} ><ButtonNext titulo="FAIR STATE" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/Securian' onClick={scrollToTop} ><ButtonNext titulo="SECURIAN" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
+
             </Container>
         </div>
     )

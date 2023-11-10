@@ -8,7 +8,6 @@ import Giftcards from '../../../assets/hello-pizza/Little_Hello_Pizza_Giftcards.
 import swag2 from '../../../assets/hello-pizza/Little_Hello_Pizza_swag2-1.gif'
 import swag1 from '../../../assets/hello-pizza/Little_Hello_Pizza_swag-1.jpg'
 import { Link } from 'react-router-dom'
-import ButtonAll from '../../../components/button-all/ButtonAll'
 import ButtonNext from '../../../components/button-next/ButtonNext'
 
 
@@ -94,26 +93,47 @@ const HelloPizza = () => {
                     </Col>
                 </Row>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
+               
+               
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/Bremer-Bank' onClick={scrollToTop} ><ButtonNext titulo="BREMER BANK" /></Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/Vermont-Creamery' onClick={scrollToTop} ><ButtonNext titulo="VERMONT CREAMERY" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/Bremer-Bank' onClick={scrollToTop} ><ButtonNext titulo="BREMER BANK" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
+
+               
+
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
             </Container>
         </div>
     )

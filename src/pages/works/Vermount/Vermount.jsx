@@ -9,7 +9,7 @@ import Notebooks from '../../../assets/vermont/VrmntCream_Notebooks_2000px_2.jpg
 import Slide2 from '../../../assets/vermont/VermontCrmry_Slide2.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
+
 
 
 
@@ -90,26 +90,29 @@ const Vermount = () => {
           </Col>
         </Row>
 
-        <div className="up-next">
-          <h6>UP NEXT</h6>
-        </div>
-
         <div className="btn-next-all">
-    <Row className="justify-content-end">
-        <Col sm={6}>
-            <div className="btn-next">
-                <Link to='/work/Hello-pizza' onClick={scrollToTop} ><ButtonNext titulo="HELLO PIZZA" /></Link>
-            </div>
-        </Col>
-        <Col sm={6}>
-            <div className="btn-all">
-                <Link to='/work'onClick={scrollToTop}>
-                    <ButtonAll name='ALL PROJECTS'/>
-                </Link>
-            </div>
-        </Col>
-    </Row>
-</div>
+                    <Row className="justify-content-end">
+                        <Col sm={6}>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/King-Arthur' onClick={scrollToTop} ><ButtonNext titulo="KING ARTHUR" /></Link>
+                            </div>
+                        </Col>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/Hello-Pizza' onClick={scrollToTop} ><ButtonNext titulo="HELLO PIZZA" /></Link>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+
+         
+        
       </Container>
 
     </div>

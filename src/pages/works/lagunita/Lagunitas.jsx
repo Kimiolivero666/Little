@@ -12,7 +12,6 @@ import Lagunitas_DTH from '../../../assets/Lagunitas_DTH_Campaign.jpg'
 import redes3 from '../../../assets/redes3.jpg'
 import redes4 from '../../../assets/redes4.jpg'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
 import { Link } from 'react-router-dom'
 
 
@@ -115,22 +114,26 @@ const Lagunitas = () => {
                         </section>
                     </Col>
                 </Row>
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
+
+
+
 
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/King-Arthur' onClick={scrollToTop} ><ButtonNext titulo="KING ARTHUR" /></Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/securian' onClick={scrollToTop} ><ButtonNext titulo="SECURIAN" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/King-Arthur' onClick={scrollToTop} ><ButtonNext titulo="KING ARTHUR" /></Link>
                             </div>
                         </Col>
                     </Row>

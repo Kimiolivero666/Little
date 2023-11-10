@@ -9,7 +9,6 @@ import Capital_City from '../../../assets/experimential/Capital_City_bikeway_760
 import Target_Giftcards from '../../../assets/experimential/Target_Giftcards_928x536px.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
 
 const Experimential = () => {
 
@@ -81,26 +80,29 @@ const Experimential = () => {
                     </Col>
                 </Row>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
+               
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/capabilitieS/campaign' onClick={scrollToTop}><ButtonNext titulo="CAMPAIGN" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/capabilities/digital' onClick={scrollToTop} ><ButtonNext titulo="DIGITAL" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/capabilities' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL CAPABILITIES' />
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/capabilities/campaign' onClick={scrollToTop} ><ButtonNext titulo="CAMPAIGN" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
+
+
             </Container>
         </div>
     )

@@ -11,7 +11,7 @@ import Signage from '../../../assets/securian/Little_Securian_Signage_2-1.jpg'
 import OOH from '../../../assets/securian/Little_Securian_OOH.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
+
 
 const Securian = () => {
 
@@ -84,29 +84,29 @@ const Securian = () => {
                         IN 2019**</p>
                 </div>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/Lagunitas' onClick={scrollToTop}><ButtonNext titulo="LAGUNITA" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/Lsi' onClick={scrollToTop} ><ButtonNext titulo="LSI" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/lagunitas' onClick={scrollToTop} ><ButtonNext titulo="LAGUNITAS" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
 
-            </Container>
+              
+              </Container>
         </div>
     )
 }

@@ -27,6 +27,27 @@
 .link-capabilities:hover {
     color: rgb(75, 75, 75);
   }
+
+
+    /* responsive */
+
+
+
+@media screen and (max-width: 994px){
+    .link-capabilities{
+      font-size: 130px;
+      font-weight: 400;
+  }
+  
+  }
+  
+  @media screen and (max-width: 660px){
+    .link-capabilities{
+      font-size: 80px;
+      font-weight: 300;
+  }
+  
+  }
   
   
 

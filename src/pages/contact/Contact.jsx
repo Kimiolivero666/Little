@@ -1,6 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import './contact.css'
-import ButtonAll from '../../components/button-all/ButtonAll';
 import { Link } from 'react-router-dom';
 import ButtonNext from '../../components/button-next/ButtonNext';
 
@@ -69,24 +68,24 @@ const Contact = () => {
                     </Col>
                 </Row>
 
-                <div className="btn-next-all mt-5">
+                
+                <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/about' onClick={scrollToTop}><ButtonNext titulo="ABOUT US" />
-                                </Link>
+                            <div className="btn-previus">
+                                <Link to='/about' onClick={scrollToTop} ><ButtonNext titulo="ABOUT US" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='OUR WORK' />
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="">
+                                <Link to='/work' onClick={scrollToTop} ><ButtonNext titulo="OUR WORK" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
-            </Container>
+
+
+               </Container>
         </div>
     )
 }

@@ -15,7 +15,7 @@ import BremerSwag from '../../../assets/bremer-bank/Little_Bremer_Swag.jpg'
 import Icons from '../../../assets/bremer-bank/Little_Bremer_Icons.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
+
 
 
 
@@ -133,28 +133,30 @@ const BremerBank = () => {
                     </Col>
                 </Row>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
+                
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/Fair-State' onClick={scrollToTop}><ButtonNext titulo="FAIR STATE" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/Hello-Pizza' onClick={scrollToTop} ><ButtonNext titulo="HELLO PIZZA" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS' />
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/Fair-State' onClick={scrollToTop} ><ButtonNext titulo="FAIR STATE" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
-            </Container>
+
+
+                </Container>
 
         </div>
     )

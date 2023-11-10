@@ -13,7 +13,7 @@ import BFIO_Bremer from '../../../assets/brand/Little_BFIO_Bremer.jpg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
+
 
 
 const Brand = () => {
@@ -176,31 +176,30 @@ const Brand = () => {
                     </Col>
                 </Row>
 
-
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
+                
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/capabilities/digital' onClick={scrollToTop}><ButtonNext titulo="DIGITAL" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/capabilities/strategy' onClick={scrollToTop} ><ButtonNext titulo="STRATEGY" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/capabilities' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL CAPABILITIES' />
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/capabilities/digital' onClick={scrollToTop} ><ButtonNext titulo="DIGITAL" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
 
 
-            </Container>
+           </Container>
         </div>
     )
 }

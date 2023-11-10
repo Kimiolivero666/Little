@@ -3,7 +3,7 @@ import './capabilities.css'
 import { Col, Container, Row } from "react-bootstrap"
 import Listado from '../../components/listado/Listado';
 import ButtonNext from '../../components/button-next/ButtonNext';
-import ButtonAll from '../../components/button-all/ButtonAll';
+
 
 
 const Capabilities = () => {
@@ -60,24 +60,23 @@ const Capabilities = () => {
                     <h6>THE PROOF IS IN THE PORTFOLIO</h6>
                 </div>
 
+                
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work' onClick={scrollToTop}><ButtonNext titulo="OUR WORK" />
-                                </Link>
+                            <div className="btn-previus">
+                                <Link to='/work' onClick={scrollToTop} ><ButtonNext titulo="OUR WORK" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ABOUT LITTLE'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                          <div className="">
+                                <Link to='/about' onClick={scrollToTop} ><ButtonNext titulo="ABOUT LITTLE" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
-            </Container>
+
+                </Container>
         </div>
     )
 }

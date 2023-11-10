@@ -15,7 +15,7 @@ import Jinx from '../../../assets/fair-state/Little_FairState_Jinx.png'
 import Viennal from '../../../assets/fair-state/Little_FairState_Viennal.jpg'
 import { Link } from 'react-router-dom'
 import ButtonNext from '../../../components/button-next/ButtonNext'
-import ButtonAll from '../../../components/button-all/ButtonAll'
+
 
 
 
@@ -40,17 +40,17 @@ const FairState = () => {
                         <p>As only the third brewery co-op in the country, we celebrated Fair State’s community focus with the iconic “infinity pint”—an infinity symbol that morphs into a beer glass—representing the unending connection between brewer and community. Now available at sites across the country and even globally, we continue to create showstopper can and bottle designs that have helped them become the fastest growing craft beer in their distributor’s portfolio. </p>
                     </Col>
                     <Col md={4}>
-                        <Listado 
-                         titulo="WHAT WE DID"
-                         subtitulo1=""
-                         subtitulo2="BRAND"
-                         subtitulo3="PACKAGING"
-                         subtitulo4=""
-                         subtitulo5="CONTENT"
-                         subtitulo6=""
-                         subtitulo7=""
-                         subtitulo8=""
-                         />
+                        <Listado
+                            titulo="WHAT WE DID"
+                            subtitulo1=""
+                            subtitulo2="BRAND"
+                            subtitulo3="PACKAGING"
+                            subtitulo4=""
+                            subtitulo5="CONTENT"
+                            subtitulo6=""
+                            subtitulo7=""
+                            subtitulo8=""
+                        />
                     </Col>
                 </Row>
 
@@ -112,27 +112,27 @@ const FairState = () => {
                     </Col>
                 </Row>
 
-                <div className="up-next">
-                    <h6>UP NEXT</h6>
-                </div>
-
                 <div className="btn-next-all">
                     <Row className="justify-content-end">
                         <Col sm={6}>
-                            <div className="btn-next">
-                                <Link to='/work/Lsi' onClick={scrollToTop}><ButtonNext titulo="LSI" />
-                                </Link>
+                            <div className="up-next">
+                                <h6>PREVIUS</h6>
+                            </div>
+                            <div className="btn-previus">
+                                <Link to='/work/Bremer-Bank' onClick={scrollToTop} ><ButtonNext titulo="BREMER BANK" /></Link>
                             </div>
                         </Col>
-                        <Col sm={6}>
-                            <div className="btn-all">
-                                <Link to='/work' onClick={scrollToTop}>
-                                    <ButtonAll name='ALL PROJECTS'/>
-                                </Link>
+                        <Col sm={6} className='btn-next'>
+                            <div className="up-next">
+                                <h6>UP NEXT</h6>
+                            </div>
+                            <div className="">
+                                <Link to='/work/Lsi' onClick={scrollToTop} ><ButtonNext titulo="LSI" /></Link>
                             </div>
                         </Col>
                     </Row>
                 </div>
+
             </Container>
 
         </div>
